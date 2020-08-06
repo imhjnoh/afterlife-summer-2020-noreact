@@ -1,0 +1,105 @@
+:root{
+  --main : #8fd4d1;
+  --main-dark : #479a9a;
+  --bgcolor : #f7f2e3;
+}
+
+  body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  p{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .header{
+    display: flex;
+    align-items: flex-end;
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+    height: 14%;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    margin: 0px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-style: italic;
+    font-size: 6vh;
+    line-height: 80%;
+    text-shadow: 0.3vw 0.3vh 0.4vh var(--main-dark);
+    color: white;
+  }
+
+  .bg-container{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    /*background: linear-gradient(183deg, #edf3f2, #b8d9dd, #f2dede, #f7f1f1) no-repeat center center fixed;*/
+    background: linear-gradient(2deg, rgba(255,255,255,1) 15%, rgba(148,255,239,1) 30%, rgba(0,212,255,1) 86%) no-repeat center center fixed;
+    /*background: radial-gradient( circle farthest-corner at 50% 130%,  #394242 0%, #394242 20%, #f7f2e3 100%) no-repeat center center fixed;*/
+    /*background: radial-gradient( circle farthest-corner at 50% 130%,  #db929e 0%, #db929e 20%, #f7f2e3 100%) no-repeat center center fixed;*/
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+  }
+
+  #particles-container-day{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: luminosity;
+  }
+  #particles-container-night{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: normal;
+  }
+  #particles-container-twilight{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: normal;
+  }
+
+
+  .bg-lace {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-image: url(../images/header.svg);
+    background-repeat: repeat;
+    background-size: contain;
+    mix-blend-mode: color-burn;
+    opacity: 1.0;
+
+  }
+
+  .footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 20%;
+
+    opacity: 1.0;
+  }
+
+  .footer-image{
+    height: 100%;
+    background-image: url(../images/beach_pattern.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+  }
