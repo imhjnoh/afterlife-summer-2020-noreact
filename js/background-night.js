@@ -25,8 +25,8 @@ particlesJS('particles-container-night',
     "shape": {
       "type": "edge",
       "stroke": {
-        "width": 1,
-        "color": "ffffff"
+        "width": 0,
+        "color": "#ffffff"
       },
       "polygon": {
         "nb_sides": 6

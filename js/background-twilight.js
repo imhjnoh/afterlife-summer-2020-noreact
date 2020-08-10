@@ -29,7 +29,7 @@ particlesJS('particles-container-twilight',
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.4,
       "random": true,
       "anim": {
         "enable": false,
@@ -39,7 +39,7 @@ particlesJS('particles-container-twilight',
       }
     },
     "size": {
-      "value": 12,
+      "value": 10,
       "random": true,
       "anim": {
         "enable": false,
