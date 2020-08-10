@@ -3,7 +3,7 @@ particlesJS('particles-container-twilight',
 {
   "particles": {
     "number": {
-      "value": 20,
+      "value": 16,
       "density": {
         "enable": true,
         "value_area": 450.1491985203453
@@ -11,13 +11,13 @@ particlesJS('particles-container-twilight',
     },
     "color": {
       "random": true,
-      "value": 'random'
+      "value": '#ffffff'
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 1,
-        "color": "ffffff"
+        "color": "#ffffff"
       },
       "polygon": {
         "nb_sides": 6
@@ -29,8 +29,8 @@ particlesJS('particles-container-twilight',
       }
     },
     "opacity": {
-      "value": 0.1,
-      "random": false,
+      "value": 0.5,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 1,
@@ -39,7 +39,7 @@ particlesJS('particles-container-twilight',
       }
     },
     "size": {
-      "value": 20,
+      "value": 12,
       "random": true,
       "anim": {
         "enable": false,
