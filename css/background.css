@@ -4,7 +4,29 @@
   --bgcolor : #f7f2e3;
 }
 
+@keyframes leftin {
+  from {left: -40%;}
+  to {left: 0;}
+}
+@keyframes rightin {
+  from {right: -40%;}
+  to {right: 0;}
+}
+@keyframes upin {
+  from {bottom: -20%;}
+  to {bottom: 0;}
+}
+@keyframes rot {
+  from {transform: none;}
+  to {transform: rotate(30deg);}
+
+}
+
+
+
+
   body{
+    overflow: hidden;
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -17,23 +39,94 @@
     padding: 0px;
   }
 
-  .header{
-    display: flex;
-    align-items: flex-end;
+  /* .header{
+    background-color: black;
     margin: 0px;
     padding: 0px;
-    width: inherit;
-    height: 14%;
-    text-align: center;
-    justify-content: center;
+    width: 100%;
+    height: 60%;
     position: absolute;
-    margin: 0px;
     font-family: 'Black Han Sans', sans-serif;
     font-style: italic;
     font-size: 6vh;
     line-height: 80%;
     text-shadow: 0.3vw 0.3vh 0.4vh var(--main-dark);
     color: white;
+  } */
+
+
+
+
+  .left{
+    position: absolute;
+    left: 0;
+    height: 60%;
+    width: 40%;
+    /* background-color: black; */
+    background-image: url(../images/left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    animation: leftin 1s;
+    animation-timing-function: ease;
+
+  }
+
+  .logo{
+    position: absolute;
+    top:30%;
+    height: 20%;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(150,200,200,0.1);
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .leggo{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 10%;
+    max-height: 10%;
+
+  }
+
+  .leggoo{
+    height: 100%;
+    background-image: url(../images/leggo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1s ease;
+  }
+
+  .leggoo:hover{
+    transform: rotate(10deg);
+  }
+  .leggoo:active{
+    color: none;
+  }
+
+  .right{
+    position: absolute;
+    right: 0;
+    height: 60%;
+    width: 40%;
+    /* background-color: black; */
+    background-image: url(../images/right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    animation: rightin 1s;
+    animation-timing-function: ease;
+
+
   }
 
   .bg-container{
@@ -48,6 +141,14 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
+  }
+
+  .bg-pattern{
+    background-image: url(../images/pattern.png);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 
   #particles-container-day{
@@ -95,6 +196,9 @@
     height: 20%;
 
     opacity: 1.0;
+
+    animation: upin 0.7s;
+    animation-timing-function: ease-out;
   }
 
   .footer-image{
@@ -102,4 +206,6 @@
     background-image: url(../images/beach_pattern.png);
     background-repeat: repeat-x;
     background-size: cover;
+
+
   }
