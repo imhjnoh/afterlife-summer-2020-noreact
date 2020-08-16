@@ -31,6 +31,7 @@
     padding: 0px;
     width: 100%;
     height: 100%;
+    text-align: center;
 
   }
 
@@ -141,6 +142,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
+    text-align: center;
   }
 
   .bg-pattern{
@@ -177,17 +179,40 @@
   }
 
 
-  .bg-lace {
+  .gallary{
     position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80vh;
+    max-width: 100%;
+    height: 100%;
+
+    text-align: center;
+    background-size: cover;
+
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+  }
+
+  .gallary::-webkit-scrollbar {
+  display: none;
+}
+
+  .piece{
+    position: relative;
     width: 100%;
-    height: 40%;
-    background-image: url(../images/header.svg);
-    background-repeat: repeat;
     background-size: contain;
-    mix-blend-mode: color-burn;
-    opacity: 1.0;
+  }
+
+
+    img{
+    width: 100%;
 
   }
+
 
   .footer{
     position: absolute;
