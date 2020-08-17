@@ -1,0 +1,316 @@
+:root{
+  --main : #8fd4d1;
+  --main-dark : #479a9a;
+  --bgcolor : #f7f2e3;
+}
+
+@font-face { font-family: '양진체'; src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BinggraeMelona'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BinggraeMelona.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BMEULJIRO'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+  body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  p{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .header{
+    display: flex;
+    align-items: flex-end;
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+    height: 14%;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 10vh;;
+    font-family: 'Black Han Sans', sans-serif;
+    font-style: italic;
+    font-size: 6vh;
+    line-height: 80%;
+    text-shadow: 0.3vw 0.3vh 0.4vh var(--main-dark);
+    color: white;
+  }
+
+  .bg-container{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    /*background: linear-gradient(183deg, #edf3f2, #b8d9dd, #f2dede, #f7f1f1) no-repeat center center fixed;*/
+    background: radial-gradient( circle farthest-corner at 50% 130%, var(--main) 0%, var(--main) 10%, var(--bgcolor) 100%) no-repeat center center fixed;
+    /*background: radial-gradient( circle farthest-corner at 50% 130%,  #394242 0%, #394242 20%, #f7f2e3 100%) no-repeat center center fixed;*/
+    /*background: radial-gradient( circle farthest-corner at 50% 130%,  #db929e 0%, #db929e 20%, #f7f2e3 100%) no-repeat center center fixed;*/
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+
+  }
+
+  #particles-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: luminosity;
+  }
+  #particles-container-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: luminosity;
+  }
+
+
+  .bg-lace {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-image: url(../images/header.svg);
+    background-repeat: repeat;
+    background-size: contain;
+    mix-blend-mode: color-burn;
+    opacity: 1.0;
+
+  }
+
+  .footer-bar{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 10%;
+
+    background: linear-gradient(white 0%, var(--main-dark) 100%);
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+  }
+
+
+  .swiper-container{
+    /*background-color: black;*/
+    position: absolute;
+    display: flex;
+    top: 48%;
+    left: 50%;
+    width: 85vh;
+    max-width: 100%;
+    /* background-color: black; */
+    height: 98%;
+    transform: translate(-50%, -47%);
+    text-align: center;
+  }
+
+  .jo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: multiply;
+    filter: drop-shadow(0.1vh 0.1vh 0.5vh var(--main-dark));
+    opacity: 1;
+    width: 60vh;
+    max-width: 100%;
+
+  }
+
+  .hjtx{
+    margin-top: 7vh;
+    width: 75%;
+    height: 80%;
+    text-align: left;
+    overflow: auto;
+    font-family: 'NanumSquare';
+    font-weight: normal;
+    background-color: #ffffff80;
+    font-size: 2vh;
+    color: black;
+    white-space: pre-wrap;
+    border: 2vh solid #ffffff00;
+
+
+  }
+
+  .jotx{
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-family: 'GyeonggiBatang', sans-serif;
+    font-style: normal;
+    color: var(--main-dark);
+    font-size: 10vh;
+    mix-blend-mode: multiply;
+    text-shadow: 0.2vh 0.2vh 0vh black;
+  }
+
+  .buttons-container{
+    display: flex;
+    position: absolute;
+    top:43%;
+    width: 100%;
+    height: 7vh;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next{
+    background-image: url();
+    outline: none;
+    fill: white;
+    filter: drop-shadow( 0.1vh 0.1vh 0.4vh var(--main-dark));
+
+  }
+
+  .swiper-button-prev{
+    left: 1vh;
+  }
+  .swiper-button-next{
+    right: 2.5vh;
+  }
+
+  .swiper-button-prev img,
+  .swiper-button-next img{
+    width: 5vh;
+    fill: white;
+  }
+
+  .swiper-wrapper{
+    /*background-color: blue;*/
+    display: flex;
+    align-items: center;
+    width: inherit;
+    top: 8.5%;
+    height: 82%;
+
+  }
+
+  .swiper-slide{
+    display: flex;
+    width: inherit;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .swiper-slide img{
+    max-height: inherit;
+    width: auto;
+    height: inherit;
+    filter: drop-shadow(0vh 0vh 1vh white);
+
+  }
+
+  .button-wrapper{
+    width: 25vh;
+    height: 40vh;
+  }
+
+  .mnbtn{
+    font-family: 'Black Han Sans';
+    font-size: 5vh;
+    width: 98%;
+    height: 1vh;
+    margin: 1%;
+    margin-bottom: 25%;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0vh 0vh 1vh var(--main-dark)
+  }
+
+  .names{
+
+    height: 10vh;
+    width: 50vh;
+
+    text-align: center;
+
+  }
+
+  .names p{
+    display: inline-block;
+  }
+
+
+  .name-bar{
+    margin-top: -3vh;
+    height: 1vh;
+    background-image: url(../cloud.svg);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-color: var(--main-dark);
+    border: 0.01vh solid var(--main-dark);
+
+  }
+
+  .char-name{
+
+    font-family: 'BMEULJIRO';
+    color: white;
+    font-size: 7vh;
+    text-shadow: 0vh 0vh 1vh var(--main-dark);
+
+
+  }
+
+  .participant{
+    margin-top: 2vh;
+
+    font-family: 'BMEULJIRO';
+    color: white;
+    font-size: 3vh;
+    text-shadow: 0vh 0vh 1vh var(--main-dark);
+  }
+
+
+
+  .title-container{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5vh;
+  }
+
+  .title-container img{
+    width: 45vh;
+  }
+
+  .swiper-pagination{
+    position: absolute;
+    margin-bottom: 2vh;
+
+  }
+
+.swiper-pagination-bullet{
+  mix-blend-mode: multiply;
+}
+
+.swiper-pagination-bullet-active{
+  background: var(--main-dark);
+}
+
+.s-footer{
+  position: absolute;
+  width: inherit;
+  height: 20%;
+  bottom: 0;
+  background-image: url(../cloud.svg);
+  background-repeat: repeat;
+  background-size: contain;
+  mix-blend-mode: color-burn;
+  opacity: 1;
+}

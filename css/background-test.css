@@ -1,0 +1,318 @@
+:root{
+  --main : #8fd4d1;
+  --main-dark : #479a9a;
+  --bgcolor : #f7f2e3;
+}
+
+@keyframes leftin {
+  from {left: -40%;}
+  to {left: 0;}
+}
+@keyframes rightin {
+  from {right: -40%;}
+  to {right: 0;}
+}
+@keyframes upin {
+  from {bottom: -20%;}
+  to {bottom: 0;}
+}
+@keyframes rot {
+  from {transform: none;}
+  to {transform: rotate(30deg);}
+
+}
+
+
+
+
+  body{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+  }
+
+  p{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* .header{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    font-family: 'Black Han Sans', sans-serif;
+    font-style: italic;
+    font-size: 6vh;
+    line-height: 80%;
+    text-shadow: 0.3vw 0.3vh 0.4vh var(--main-dark);
+    color: white;
+  } */
+
+
+
+
+  .left{
+    position: absolute;
+    left: 0;
+    height: 60%;
+    width: 40%;
+    /* background-color: black; */
+    background-image: url(../images/left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    animation: leftin 1s;
+    animation-timing-function: ease;
+
+  }
+
+  .logo{
+    position: absolute;
+    top:30%;
+    height: 20%;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(150,200,200,0.1);
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  .leggo{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 10%;
+    max-height: 10%;
+
+  }
+
+  .leggoo{
+    height: 100%;
+    background-image: url(../images/leggo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1s ease;
+  }
+
+  .leggoo:hover{
+    transform: rotate(10deg);
+  }
+  .leggoo:active{
+    color: none;
+  }
+
+  .right{
+    position: absolute;
+    right: 0;
+    height: 60%;
+    width: 40%;
+    /* background-color: black; */
+    background-image: url(../images/right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    animation: rightin 1s;
+    animation-timing-function: ease;
+
+
+  }
+
+  .bg-container{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    /*background: linear-gradient(183deg, #edf3f2, #b8d9dd, #f2dede, #f7f1f1) no-repeat center center fixed;*/
+    background: linear-gradient(2deg, rgba(255,255,255,1) 15%, rgba(148,255,239,1) 30%, rgba(0,212,255,1) 86%) no-repeat center center fixed;
+    /*background: radial-gradient( circle farthest-corner at 50% 130%,  #394242 0%, #394242 20%, #f7f2e3 100%) no-repeat center center fixed;*/
+    /*background: radial-gradient( circle farthest-corner at 50% 130%,  #db929e 0%, #db929e 20%, #f7f2e3 100%) no-repeat center center fixed;*/
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    text-align: center;
+  }
+
+  .bg-pattern{
+    background-image: url(../images/pattern.png);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  #particles-container-day{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: normal;
+  }
+  #particles-container-night{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: normal;
+  }
+  #particles-container-twilight{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: luminosity;
+  }
+
+
+  .gallary{
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 80vh;
+    max-width: 100%;
+    height: 100%;
+
+    text-align: center;
+    background-size: cover;
+
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+  }
+
+  .gallary::-webkit-scrollbar {
+  display: none;
+}
+
+  .piece{
+    position: relative;
+    width: 100%;
+    background-size: contain;
+  }
+
+
+    img{
+    width: 100%;
+
+  }
+
+
+  .footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 20%;
+
+    opacity: 1.0;
+
+    animation: upin 0.7s;
+    animation-timing-function: ease-out;
+  }
+
+  .footer-image{
+    height: 100%;
+    background-image: url(../images/beach_pattern.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+
+
+  }
+
+
+
+
+
+
+
+
+  .swiper-container{
+    /* background-color: black; */
+    position: absolute;
+    display: flex;
+    width: 85vh;
+    max-width: 100%;
+    /* background-color: black; */
+    height: 100%;
+    /* transform: translateY(-10%); */
+    text-align: center;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next{
+    background-image: url();
+    outline: none;
+    fill: white;
+    filter: drop-shadow( 0.1vh 0.1vh 0.4vh var(--main-dark));
+
+  }
+
+  .swiper-button-prev{
+    left: 1vh;
+  }
+  .swiper-button-next{
+    right: 2.5vh;
+  }
+
+  .swiper-button-prev img,
+  .swiper-button-next img{
+    width: 5vh;
+    fill: white;
+  }
+
+  .swiper-wrapper{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    width: inherit;
+    height: 100%;
+
+  }
+
+  .swiper-slide{
+    display: flex;
+    width: inherit;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .swiper-slide img{
+    max-height: inherit;
+    width: auto;
+    height: inherit;
+    /* filter: drop-shadow(0vh 0vh 1vh white); */
+
+  }
+
+  .swiper-pagination{
+    position: absolute;
+    /* margin-bottom: 2vh; */
+
+  }
+
+  .swiper-pagination-bullet{
+  mix-blend-mode: multiply;
+  }
+
+  .swiper-pagination-bullet-active{
+  background: var(--main-dark);
+  }
