@@ -13,6 +13,13 @@ var Gallery = new Swiper('.swiper-container', {
   // },
   loop: false,
   effect: 'coverflow',
+  flipEffect: {
+    rotate: 60,
+    slideShadows: false,
+  },
+  cubeEffect: {
+    slideShadows: false,
+  },
   coverflowEffect: {
     rotate: 30,
     slideShadows: false,
