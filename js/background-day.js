@@ -13,6 +13,9 @@ var Gallery = new Swiper('.swiper-container', {
   // },
   loop: false,
   effect: 'coverflow',
+  fadeEffect: {
+    crossFade: true,
+  },
   flipEffect: {
     rotate: 60,
     slideShadows: false,
@@ -21,8 +24,10 @@ var Gallery = new Swiper('.swiper-container', {
     slideShadows: false,
   },
   coverflowEffect: {
-    rotate: 30,
+    rotate: 60,
+    depth:200,
     slideShadows: false,
+    stretch: -1000,
   },
 });
 
