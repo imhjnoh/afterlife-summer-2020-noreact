@@ -29,6 +29,7 @@ var Gallery = new Swiper('.swiper-container', {
     slideShadows: false,
     stretch: -1000,
   },
+  keyboard: true,
 });
 
 $(".apbutton").click(function(){
