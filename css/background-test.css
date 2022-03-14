@@ -246,6 +246,9 @@
   }
 
   .bg-container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
     position: absolute;
     width: inherit;
     height: inherit;
